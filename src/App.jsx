@@ -1,15 +1,17 @@
 //начало декларативного
-import ReactLogo from './assets/react.svg?react';
+import reactLogo from './assets/react.svg';
 
 //начало императивного
 export const App = () => {
 	const currentYear = new Date().getFullYear();
 	return (
 		// начало декларативного
-		<div>
-			<h1>Hello world</h1>
-			<ReactLogo />
-			<h2>{currentYear}</h2>
+		<div className="App">
+			<h1 className="Heading">Hello world</h1>
+			<img src={reactLogo} className="Logo" alt="Logo" />
+			<h2>
+				Сегодня: <b>{currentYear}</b> год
+			</h2>
 		</div>
 	);
 };
