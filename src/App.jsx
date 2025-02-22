@@ -1,17 +1,20 @@
 //начало декларативного
+import { createElement } from 'react';
 import reactLogo from './assets/react.svg';
 
-//начало императивного
 export const App = () => {
 	const currentYear = new Date().getFullYear();
-	return (
-		// начало декларативного
-		<div className="App">
-			<h1 className="Heading">Hello world</h1>
-			<img src={reactLogo} className="Logo" alt="Logo" />
-			<h2>
-				Сегодня: <b>{currentYear}</b> год
-			</h2>
-		</div>
+	return createElement(
+		'div',
+		{ className: 'App' },
+		createElement('h1', { className: 'Heading' }, 'Hello World'),
+		createElement('img', { className: 'Logo', src: reactLogo, alt: 'Logo' }),
+		createElement(
+			'h2',
+			null,
+			'Сегодня ',
+			createElement('b', null, currentYear),
+			' год',
+		),
 	);
 };
