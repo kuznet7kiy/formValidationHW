@@ -1,0 +1,33 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	justify-items: center;
+	align-content: center;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url('./assets/bg-image.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(20px);
+	transform: scale(1.1);
+	z-index: -2;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url('./assets/bg-image.jpg');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: -1;
+}

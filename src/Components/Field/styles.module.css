@@ -1,0 +1,37 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.errorLabel {
+	font-weight: 700;
+	color: rgb(216, 52, 52);
+	margin-bottom: 5px;
+}
+
+.inputField {
+	text-align: center;
+	font-size: 24px;
+	min-height: 50px;
+	min-width: 300px;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+input:-webkit-autofill {
+	background-color: transparent !important;
+	color: inherit !important;
+	border: inherit !important;
+	box-shadow: inherit !important;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input::placeholder {
+	text-align: center;
+	color: rgba(240, 248, 255, 0.329);
+	font-size: 24px;
+}

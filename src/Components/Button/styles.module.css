@@ -1,0 +1,24 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	text-align: center;
+	color: black;
+	padding: 10px 20px;
+	font-size: 17px;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:disabled {
+	font-size: 17px;
+	background-color: rgba(250, 235, 215, 0.545);
+	border: inherit;
+	border-radius: 8px;
+	cursor: default;
+}
